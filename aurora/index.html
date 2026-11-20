@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nexus — Ваша новая AI-команда</title>
+<meta name="description" content="Nexus даёт каждой команде флот автономных AI-агентов, которые исследуют, пишут, тестируют и релизят.">
+<link href="assets/fonts/fonts.css?v=2" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/aurora.css">
+</head>
+<body class="aurora-page grain">
+
+<a class="skip-link" href="#main">Перейти к содержимому</a>
+
+<header class="a-header" data-header>
+  <div class="container a-header__inner">
+    <a class='a-brand' href='/forma-landing-demo/'><span class="a-brand__icon">✦</span> NEXUS</a>
+    <nav class="a-nav" aria-label="Навигация по продукту">
+      <a href="#features">Продукт</a>
+      <a href="#metrics">Решения</a>
+      <a href="#features">Разработчикам</a>
+      <a href="#pricing">Цены</a>
+    </nav>
+    <div class="a-header__actions">
+      <a class="a-signin" href="#cta">Войти</a>
+      <a class="btn btn--light shimmer-btn a-header-cta" href="#cta" data-magnetic="0.2">
+        Начать бесплатно
+        <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 15 15 5M7 5h8v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="a-hero" data-spotlight>
+    <canvas id="aStars" aria-hidden="true"></canvas>
+    <div class="a-aurora a-aurora--1" aria-hidden="true"></div>
+    <div class="a-aurora a-aurora--2" aria-hidden="true"></div>
+    <div class="a-aurora a-aurora--3" aria-hidden="true"></div>
+    <div class="a-spotlight" aria-hidden="true"></div>
+    <div class="grid-overlay" aria-hidden="true"></div>
+
+    <div class="container a-hero__inner" data-split-group>
+      <a class="a-badge" href="#features" data-reveal>
+        <span class="a-badge__dot"></span>
+        Новое: Nexus 2.0 — автономные агенты уже здесь
+        <span aria-hidden="true">→</span>
+      </a>
+
+      <h1 class="a-hero__title">
+        <span class="line-mask"><span>Ваша новая</span></span>
+        <span class="line-mask"><span><em>AI-команда.</em></span></span>
+      </h1>
+
+      <p class="a-hero__lead" data-reveal style="--delay:220ms">
+        Nexus даёт каждой команде флот автономных агентов, которые исследуют, пишут, тестируют и релизят —
+        а вы принимаете решения, которые действительно важны.
+      </p>
+
+      <div class="a-hero__actions" data-reveal style="--delay:340ms">
+        <a class="btn btn--light shimmer-btn a-hero__primary" href="#cta" data-magnetic="0.2">
+          Запустить первого агента
+          <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 15 15 5M7 5h8v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a class="a-play" href="#features" data-magnetic="0.15">
+          <span class="a-play__icon"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M5 3.5v9l7-4.5-7-4.5Z"/></svg></span>
+          Смотреть видео <small>2 мин</small>
+        </a>
+      </div>
+
+      <div class="a-social" data-reveal style="--delay:450ms">
+        <div class="a-avatars" aria-hidden="true">
+          <span>AR</span><span>MK</span><span>JD</span><span>SP</span><span>+9k</span>
+        </div>
+        <div class="a-social__text">
+          <span class="a-stars" aria-label="5 out of 5 stars">★★★★★</span>
+          <span>Более 12 000 агентов уже работают</span>
+        </div>
+      </div>
+
+      <!-- Dashboard mockup -->
+      <div class="a-dash-scene" data-reveal="scale" style="--delay:500ms">
+        <div class="a-dash-wrap" id="aTilt">
+          <div class="a-dash">
+            <aside class="a-dash__side">
+              <div class="a-dash__logo"><i>✦</i> Nexus</div>
+              <div class="a-dash__nav">
+                <span class="is-active">◫ &nbsp;Агенты</span>
+                <span>⌕ &nbsp;Запуски</span>
+                <span>▤ &nbsp;Задачи</span>
+                <span>◷ &nbsp;Журнал</span>
+                <span>⚙ &nbsp;Настройки</span>
+              </div>
+              <div class="a-dash__side-foot">
+                <i></i><span>Рабочее пространство<br><small>Тариф Pro</small></span>
+              </div>
+            </aside>
+            <div class="a-dash__main">
+              <div class="a-dash__top">
+                <div><small>Доброе утро, Алекс</small><strong>3 агента уже работают.</strong></div>
+                <span class="a-dash__pill">В эфире · 08:42</span>
+              </div>
+              <div class="a-dash__cards">
+                <div class="a-stat"><small>Автоматизировано задач</small><strong>1,284</strong><i class="a-stat__up">↗ 18%</i></div>
+                <div class="a-stat"><small>Сэкономлено часов</small><strong>348</strong><i class="a-stat__up">↗ 32%</i></div>
+                <div class="a-stat"><small>Успешных запусков</small><strong>92%</strong><i class="a-stat__up">↗ 7%</i></div>
+              </div>
+              <div class="a-chart">
+                <div class="a-chart__head"><span>Автономность</span><span>Последние 30 дней ⌄</span></div>
+                <svg viewBox="0 0 620 150" preserveAspectRatio="none" aria-hidden="true">
+                  <defs>
+                    <linearGradient id="aLine" x1="0" y1="0" x2="1" y2="0">
+                      <stop stop-color="#8b7bff"/><stop offset=".5" stop-color="#6ee7d5"/><stop offset="1" stop-color="#f5c99a"/>
+                    </linearGradient>
+                    <linearGradient id="aFill" x1="0" y1="0" x2="0" y2="1">
+                      <stop stop-color="#7c6cff" stop-opacity=".35"/><stop offset="1" stop-color="#7c6cff" stop-opacity="0"/>
+                    </linearGradient>
+                  </defs>
+                  <path class="a-chart__area" d="M0 130 C40 126 55 88 100 96 S160 128 205 104 S265 42 310 60 S370 112 420 78 S485 20 530 40 S585 62 620 18 V150 H0Z" fill="url(#aFill)"/>
+                  <path class="a-chart__line" d="M0 130 C40 126 55 88 100 96 S160 128 205 104 S265 42 310 60 S370 112 420 78 S485 20 530 40 S585 62 620 18" fill="none" stroke="url(#aLine)" stroke-width="2.5" stroke-linecap="round"/>
+                  <circle class="a-chart__dot" cx="620" cy="18" r="5" fill="#f5c99a"/>
+                </svg>
+                <div class="a-chart__x"><span>01</span><span>08</span><span>15</span><span>22</span><span>30</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="a-float a-float--summary">
+            <span class="a-float__ico">✦</span>
+            <div><small>Агент завершил</small><strong>Бриф по Q3</strong></div>
+          </div>
+          <div class="a-float a-float--task">
+            <span class="a-float__check">✓</span>
+            <div><small>Нужно одобрение</small><strong>Политика возвратов v2</strong></div>
+          </div>
+        </div>
+        <div class="a-dash__glow" aria-hidden="true"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOGOS -->
+  <section class="a-logos" aria-label="Компании, использующие Nexus">
+    <p class="mono-label">Помогаем самым автономным командам мира</p>
+    <div class="marquee" style="--speed:38s;--gap:4rem">
+      <div class="marquee__track">
+        <span>VANTA</span><span>◈ northstar</span><span>ORBITAL</span><span>◐ luminal</span><span>KINETIC</span><span>✳ parallel</span><span>VERTEX</span>
+      </div>
+      <div class="marquee__track" aria-hidden="true">
+        <span>VANTA</span><span>◈ northstar</span><span>ORBITAL</span><span>◐ luminal</span><span>KINETIC</span><span>✳ parallel</span><span>VERTEX</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="section a-features" id="features">
+    <div class="container">
+      <div class="a-section-head" data-reveal>
+        <p class="eyebrow">Почему Nexus</p>
+        <h2>Всё, что нужно.<br><em>Ничего лишнего.</em></h2>
+        <p>Меньше вкладок, яснее мысли, быстрее результат. Дайте агентам контекст и инструменты — и наблюдайте за работой.</p>
+      </div>
+
+      <div class="a-bento">
+        <article class="a-tile a-tile--wide" data-reveal data-spotlight>
+          <div class="a-tile__icon">✦</div>
+          <h3>Один флот — все процессы</h3>
+          <p>Создавайте агентов, которые реально работают. Дайте им инструменты, контекст и ограничения — и позвольте действовать.</p>
+          <div class="a-notes" aria-hidden="true">
+            <div class="a-note"><small>АГЕНТ · 2 МИН НАЗАД</small><strong>Анализ конкурентов</strong><i></i><i></i><span class="a-note__tag">#исследования</span></div>
+            <div class="a-note a-note--2"><small>СВЯЗАННЫЙ ЗАПУСК</small><strong>Бриф запуска Q3</strong><i></i><span class="a-note__tag">#стратегия</span></div>
+            <div class="a-note a-note--3"><small>ИНСАЙТ AI</small><strong>3 связанные темы</strong><span class="a-note__link">Смотреть связи →</span></div>
+          </div>
+        </article>
+
+        <article class="a-tile" data-reveal style="--delay:80ms" data-spotlight>
+          <div class="a-tile__icon">⌁</div>
+          <h3>Самовосстанавливающиеся задачи</h3>
+          <p>Агенты повторяют, эскалируют и учатся, если что-то ломается — без присмотра.</p>
+          <div class="a-summary" aria-hidden="true">
+            <span class="a-summary__bar" style="width:92%"></span>
+            <span class="a-summary__bar" style="width:76%"></span>
+            <span class="a-summary__bar" style="width:85%"></span>
+            <span class="a-summary__bar a-summary__bar--accent" style="width:55%"></span>
+          </div>
+        </article>
+
+        <article class="a-tile" data-reveal style="--delay:160ms" data-spotlight>
+          <div class="a-tile__icon">⌕</div>
+          <h3>Контекст, который следует</h3>
+          <p>Каждый агент помнит ваши документы, решения и тон — в любом запуске.</p>
+          <div class="a-search" aria-hidden="true">
+            <span>⌕</span><em>Что мы решили по ценам?</em><b>↵</b>
+          </div>
+        </article>
+
+        <article class="a-tile" data-reveal data-spotlight>
+          <div class="a-tile__icon">⇄</div>
+          <h3>Инструменты из коробки</h3>
+          <p>Подключите 200+ сервисов. Агент сам выберет нужный.</p>
+          <div class="a-flow" aria-hidden="true"><span>Slack</span><i>→</i><span>Nexus AI</span><i>→</i><span>Notion</span></div>
+        </article>
+
+        <article class="a-tile" data-reveal style="--delay:80ms" data-spotlight>
+          <div class="a-tile__icon">◎</div>
+          <h3>Человек у руля</h3>
+          <p>Одобряйте, направляйте или берите управление в любой момент.</p>
+          <div class="a-cursors" aria-hidden="true">
+            <span class="a-cursor-tag a-cursor-tag--1">Alex</span>
+            <span class="a-cursor-tag a-cursor-tag--2">Mira</span>
+            <span class="a-cursor-tag a-cursor-tag--3">Jo</span>
+          </div>
+        </article>
+
+        <article class="a-tile" data-reveal style="--delay:160ms" data-spotlight>
+          <div class="a-tile__icon">⬡</div>
+          <h3>Ограничения по умолчанию</h3>
+          <p>SOC 2 Type II, SSO и полная история каждого действия агента.</p>
+          <div class="a-shield" aria-hidden="true">
+            <svg viewBox="0 0 80 80" fill="none"><path d="M40 6 68 17v22c0 18-12 28-28 35C24 67 12 57 12 39V17L40 6Z" stroke="currentColor" stroke-width="1.5"/><path d="m28 40 8 8 17-18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- METRICS -->
+  <section class="a-metrics" id="metrics">
+    <div class="container a-metrics__inner" data-reveal>
+      <div class="a-metrics__line" aria-hidden="true"></div>
+      <div class="a-metric"><strong data-count="12" data-suffix="k+">12k+</strong><span>развёрнуто агентов</span></div>
+      <div class="a-metric"><strong data-count="348" data-suffix="h">348h</strong><span>часов автоматизировано / неделю</span></div>
+      <div class="a-metric"><strong data-count="99.98" data-suffix="%" decimals="2">99.98%</strong><span>успешность задач</span></div>
+      <div class="a-metric"><strong data-count="4.9" data-suffix="/5">4.9/5</strong><span>оценка разработчиков</span></div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section--sm a-quotes" id="pricing">
+    <div class="container a-section-head a-section-head--center" data-reveal>
+      <p class="eyebrow">Любим создателями</p>
+      <h2>Становимся<br><em>любимой командой.</em></h2>
+    </div>
+    <div class="a-quote-marquee marquee" style="--speed:46s;--gap:20px">
+      <div class="marquee__track">
+        <figure class="a-quote"><blockquote>«Наши агенты Nexus берут на себя исследование и первый черновик. Мы приходим ради решений, где нужен человек.»</blockquote><figcaption><span class="a-quote__av">MK</span><span><strong>Мира Ковач</strong><small>Руководитель продукта, Vanta</small></span></figcaption></figure>
+        <figure class="a-quote"><blockquote>«Мы заменили четыре инструмента и таблицу. Команда больше не спрашивает, где что лежит — агенты просто знают.»</blockquote><figcaption><span class="a-quote__av a-quote__av--2">JD</span><span><strong>Джона Дин</strong><small>Генеральный директор, Orbital</small></span></figcaption></figure>
+        <figure class="a-quote"><blockquote>«Первый ИИ-инструмент, который уважает наше время. У каждого запуска есть след, у каждого действия — причина.»</blockquote><figcaption><span class="a-quote__av a-quote__av--3">SP</span><span><strong>София Парк</strong><small>Ведущий дизайнер, Northstar</small></span></figcaption></figure>
+      </div>
+      <div class="marquee__track" aria-hidden="true">
+        <figure class="a-quote"><blockquote>«Наши агенты Nexus берут на себя исследование и первый черновик. Мы приходим ради решений, где нужен человек.»</blockquote><figcaption><span class="a-quote__av">MK</span><span><strong>Мира Ковач</strong><small>Руководитель продукта, Vanta</small></span></figcaption></figure>
+        <figure class="a-quote"><blockquote>«Мы заменили четыре инструмента и таблицу. Команда больше не спрашивает, где что лежит — агенты просто знают.»</blockquote><figcaption><span class="a-quote__av a-quote__av--2">JD</span><span><strong>Джона Дин</strong><small>Генеральный директор, Orbital</small></span></figcaption></figure>
+        <figure class="a-quote"><blockquote>«Первый ИИ-инструмент, который уважает наше время. У каждого запуска есть след, у каждого действия — причина.»</blockquote><figcaption><span class="a-quote__av a-quote__av--3">SP</span><span><strong>София Парк</strong><small>Ведущий дизайнер, Northstar</small></span></figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="a-cta" id="cta">
+    <div class="a-cta__glow" aria-hidden="true"></div>
+    <div class="container a-cta__inner" data-split-group>
+      <p class="eyebrow" data-reveal>Готовы, когда вы готовы</p>
+      <h2>
+        <span class="line-mask"><span>Ваши агенты</span></span>
+        <span class="line-mask"><span><em>готовы.</em></span></span>
+      </h2>
+      <p data-reveal>Бесплатно навсегда для небольших команд. Без карты, без звонков, без шума.</p>
+      <div class="a-cta__actions" data-reveal>
+        <a class="btn btn--light shimmer-btn" href="#main" data-magnetic="0.2">Запустить первого агента <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 15 15 5M7 5h8v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a class="btn btn--outline" href="#features">Возможности</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="a-footer">
+    <div class="container a-footer__inner">
+      <a class='a-brand' href='/forma-landing-demo/'><span class="a-brand__icon">✦</span> NEXUS</a>
+      <nav aria-label="Навигация в подвале"><a href="#features">Продукт</a><a href="#metrics">Клиенты</a><a href="#pricing">Цены</a><a href='/forma-landing-demo/'>Все работы</a></nav>
+      <p>© <span data-year>2026</span> Nexus. Концепт-лендинг.</p>
+    </div>
+  </footer>
+
+</main>
+
+<script src="assets/vendor/gsap.min.js"></script>
+<script src="assets/vendor/ScrollTrigger.min.js"></script>
+<script src="assets/vendor/lenis.min.js"></script>
+<script src="assets/js/core.js"></script>
+<script>
+(function () {
+  gsap.registerPlugin(ScrollTrigger);
+
+  /* Hero copy parallax */
+  gsap.to('.a-hero__title', {
+    yPercent: -18, opacity: .25, ease: 'none',
+    scrollTrigger: { trigger: '.a-hero', start: 'top top', end: 'bottom top', scrub: 0.7 }
+  });
+
+  /* Dashboard parallax */
+  gsap.to('.a-dash-scene', {
+    yPercent: 12, ease: 'none',
+    scrollTrigger: { trigger: '.a-dash-scene', start: 'top bottom', end: 'bottom top', scrub: 1 }
+  });
+
+  /* Chart line draw-in */
+  gsap.fromTo('.a-chart__line', { strokeDasharray: 1400, strokeDashoffset: 1400 }, {
+    strokeDashoffset: 0, duration: 3, ease: 'power3.out', delay: 1.1
+  });
+  gsap.fromTo('.a-chart__dot', { opacity: 0, scale: 0 }, { opacity: 1, scale: 1, duration: .75, ease: 'power2.out', delay: 3.35 });
+
+  /* Bento tiles subtle float on scroll */
+  gsap.utils.toArray('.a-tile').forEach(function (tile, i) {
+    gsap.fromTo(tile, { y: 40 }, {
+      y: -10, ease: 'none',
+      scrollTrigger: { trigger: tile, start: 'top bottom', end: 'bottom top', scrub: 1.2 }
+    });
+  });
+
+  /* 3D tilt on dashboard */
+  var tilt = document.getElementById('aTilt');
+  if (tilt && matchMedia('(hover:hover) and (pointer:fine)').matches) {
+    var tiltX = 0, tiltY = 0, tiltZ = 0, curX = 0, curY = 0, curZ = 0, tiltActive = false;
+
+    function tiltRender() {
+      curX += (tiltX - curX) * 0.14;
+      curY += (tiltY - curY) * 0.14;
+      curZ += (tiltZ - curZ) * 0.14;
+      var settled = Math.abs(tiltX - curX) < 0.02 &&
+                    Math.abs(tiltY - curY) < 0.02 &&
+                    Math.abs(tiltZ - curZ) < 0.05;
+      if (settled) { curX = tiltX; curY = tiltY; curZ = tiltZ; }
+      tilt.style.transform = 'perspective(1400px) rotateY(' + curX.toFixed(2) + 'deg) rotateX(' +
+        curY.toFixed(2) + 'deg) translate3d(0,' + curZ.toFixed(2) + 'px,0)';
+      if (settled) { tiltActive = false; return; }
+      requestAnimationFrame(tiltRender);
+    }
+
+    tilt.addEventListener('mousemove', function (e) {
+      var r = tilt.getBoundingClientRect();
+      var x = (e.clientX - r.left) / r.width - .5;
+      var y = (e.clientY - r.top) / r.height - .5;
+      tiltX = x * 10;
+      tiltY = -y * 8;
+      tiltZ = -8;
+      if (!tiltActive) { tiltActive = true; requestAnimationFrame(tiltRender); }
+    });
+    tilt.addEventListener('mouseleave', function () {
+      tiltX = 0; tiltY = 0; tiltZ = 0;
+      if (!tiltActive) { tiltActive = true; requestAnimationFrame(tiltRender); }
+    });
+  }
+
+  /* Starfield */
+  var canvas = document.getElementById('aStars');
+  if (canvas && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    var ctx = canvas.getContext('2d');
+    var w, h, stars = [], dpr = Math.min(window.devicePixelRatio || 1, 2);
+    function resize() {
+      var r = canvas.parentElement.getBoundingClientRect();
+      w = r.width; h = r.height;
+      canvas.width = w * dpr; canvas.height = h * dpr;
+      canvas.style.width = w + 'px'; canvas.style.height = h + 'px';
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      var count = Math.min(90, Math.floor(w * h / 16000));
+      stars = Array.from({ length: count }, function () {
+        return { x: Math.random() * w, y: Math.random() * h, r: Math.random() * 1.4 + .3,
+                 vx: (Math.random() - .5) * .12, vy: (Math.random() - .5) * .12,
+                 o: Math.random() * .5 + .15 };
+      });
+    }
+    var lastFrame = 0;
+    function draw(now) {
+      if (!lastFrame) lastFrame = now;
+      var dt = Math.min((now - lastFrame) / 1000, 0.05);
+      lastFrame = now;
+      var speed = dt * 60;
+      ctx.clearRect(0, 0, w, h);
+      stars.forEach(function (s, i) {
+        s.x += s.vx * speed; s.y += s.vy * speed;
+        if (s.x < 0 || s.x > w) s.vx *= -1;
+        if (s.y < 0 || s.y > h) s.vy *= -1;
+        ctx.beginPath(); ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
+        ctx.fillStyle = 'rgba(200,215,255,' + s.o + ')'; ctx.fill();
+        for (var j = i + 1; j < stars.length; j++) {
+          var o = stars[j], dx = s.x - o.x, dy = s.y - o.y, d2 = dx * dx + dy * dy;
+          if (d2 < 11000) {
+            ctx.beginPath(); ctx.moveTo(s.x, s.y); ctx.lineTo(o.x, o.y);
+            ctx.strokeStyle = 'rgba(150,170,255,' + (.14 * (1 - d2 / 11000)) + ')';
+            ctx.lineWidth = .6; ctx.stroke();
+          }
+        }
+      });
+      requestAnimationFrame(draw);
+    }
+    resize(); window.addEventListener('resize', resize); requestAnimationFrame(draw);
+  }
+})();
+</script>
+<script src="assets/js/bridge.js"></script>
+</body>
+</html>
