@@ -24,6 +24,7 @@
   viewer.setAttribute('aria-hidden', 'true');
   viewer.innerHTML =
     '<iframe class="viewer__frame" id="viewerFrame" title="Лендинг"></iframe>' +
+    '<span class="viewer__loading" aria-hidden="true">Загружаем…</span>' +
     '<p class="viewer__hint" id="viewerHint">Листайте внутри — возврат внизу</p>' +
     '<nav class="viewer__dock" aria-label="Управление просмотром">' +
       '<button class="viewer__btn viewer__btn--back" type="button" data-act="close">← Витрина</button>' +
@@ -32,7 +33,7 @@
       '<span class="viewer__name" id="viewerName"><i aria-hidden="true"></i><span></span></span>' +
       '<button class="viewer__btn viewer__btn--icon" type="button" data-act="next" aria-label="Следующий лендинг">›</button>' +
       '<span class="viewer__sep" aria-hidden="true"></span>' +
-      '<a class="viewer__btn viewer__btn--open" id="viewerOpen" href="#" target="_blank" rel="noopener">↗</a>' +
+      '<a class="viewer__btn viewer__btn--open" id="viewerOpen" href="#" target="_blank" rel="noopener" aria-label="Открыть лендинг в новой вкладке" title="Открыть в новой вкладке">↗</a>' +
     '</nav>';
   document.body.appendChild(viewer);
 
@@ -171,7 +172,26 @@
   });
 
   document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape' && current) closeAndClearHash();
+    if (!current) return;
+    if (e.key === 'Escape') { closeAndClearHash(); return; }
+
+    if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
+      if (/^(INPUT|TEXTAREA|SELECT)$/.test((e.target && e.target.tagName) || '')) return;
+      e.preventDefault();
+      var i = ORDER.indexOf(current);
+      if (i < 0) i = 0;
+      location.hash = ORDER[(i + (e.key === 'ArrowRight' ? 1 : -1) + ORDER.length) % ORDER.length];
+      return;
+    }
+
+    if (e.key === 'Tab') {
+      var items = [].slice.call(viewer.querySelectorAll('button, a[href]')).filter(function (el) { return el.offsetParent !== null; });
+      if (!items.length) return;
+      var first = items[0]; var last = items[items.length - 1];
+      var inside = viewer.contains(document.activeElement);
+      if (e.shiftKey && (document.activeElement === first || !inside)) { e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && (document.activeElement === last || !inside)) { e.preventDefault(); first.focus(); }
+    }
   });
 
   frame.addEventListener('load', function () {
