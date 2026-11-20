@@ -5,10 +5,13 @@
 (function () {
   'use strict';
 
+  var BASE = '/forma-landing-demo/';
+  try { var sc = document.currentScript && document.currentScript.src; if (sc) { var bb = new URL('../..', sc).pathname; if (bb && bb !== '/') BASE = bb; } } catch (e) {}
+
   var PAGES = {
-    nexus: { src: 'aurora.html', label: 'Nexus', accent: '#9a8bff' },
-    vita:  { src: 'studio.html', label: 'Vita',  accent: '#ff7043' },
-    orbit: { src: 'lumen.html',  label: 'Orbit', accent: '#6ee7d5' }
+    nexus: { src: BASE + 'aurora/', label: 'Nexus', accent: '#9a8bff' },
+    vita:  { src: BASE + 'studio/', label: 'Vita',  accent: '#ff7043' },
+    orbit: { src: BASE + 'lumen/',  label: 'Orbit', accent: '#6ee7d5' }
   };
   var ORDER = ['nexus', 'vita', 'orbit'];
 
@@ -176,7 +179,8 @@
     try {
       var path = frame.contentWindow.location.pathname;
       // Ссылки «все работы» внутри лендинга возвращают на витрину
-      if (/(^|\/)(index|site)\.html$/.test(path)) { closeAndClearHash(); return; }
+      var norm = path.replace(/index\.html$/, '');
+      if (norm === BASE || norm === BASE + 'site/' || /(^|\/)site\.html$/.test(path)) { closeAndClearHash(); return; }
       frame.contentWindow.scrollTo(0, 0);
     } catch (e) {}
   });
