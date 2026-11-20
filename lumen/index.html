@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Orbit — Космическая съёмка Мило Вантерпула</title>
+<meta name="description" content="Orbit — кинематографичное портфолио космической съёмки, где Вселенная замирает в кадре.">
+<link href="assets/fonts/fonts.css?v=2" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/lumen.css">
+</head>
+<body class="lumen-page grain">
+
+<a class="skip-link" href="#main">Перейти к содержимому</a>
+
+<div class="l-progress" aria-hidden="true"><span id="lProgress"></span></div>
+
+<header class="l-header" data-header>
+  <div class="container l-header__inner">
+    <a class='l-logo' href='/forma-landing-demo/'>ORBIT<span>®</span></a>
+    <p>КОСМИЧЕСКАЯ СЪЁМКА / 2026</p>
+    <button class="l-menu-btn" id="lMenuBtn" aria-expanded="false" aria-controls="lMenu">МЕНЮ <span>+</span></button>
+  </div>
+</header>
+
+<div class="l-menu" id="lMenu" aria-hidden="true">
+  <div class="l-menu__inner">
+    <button class="l-menu__close" id="lMenuClose" aria-label="Закрыть меню">ЗАКРЫТЬ ×</button>
+    <nav aria-label="Навигация по портфолио">
+      <a href="#main"><span>01</span> Главная</a>
+      <a href="#story"><span>02</span> История</a>
+      <a href="#chapters"><span>03</span> Главы</a>
+      <a href="#contact"><span>04</span> Контакты</a>
+    </nav>
+    <p>Вселенная, замершая в кадре.<br><em>— Мило Вантерпул</em></p>
+  </div>
+</div>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="l-hero">
+    <div class="l-hero__media" id="lHeroMedia">
+      <img src="assets/img/photo-07.jpg" alt="Земля с орбиты ночью" fetchpriority="high">
+    </div>
+    <div class="l-hero__shade" aria-hidden="true"></div>
+
+    <div class="container l-hero__inner" data-split-group>
+      <p class="l-hero__eyebrow">ИЗБРАННЫЕ КАДРЫ &nbsp;·&nbsp; 2021 — 2026 <span>✳</span> МИЛО ВАНТЕРПУЛ</p>
+      <h1><span class="line-mask"><span>Orbit</span></span></h1>
+      <p class="l-hero__sub">Вселенная, замершая в кадре.</p>
+    </div>
+
+    <div class="container l-hero__bottom">
+      <span class="l-hero__side">ЛИСТАЙТЕ ВНИЗ</span>
+      <p>Глубокий космос, планетарные поверхности и тонкая голубая линия, которую мы называем домом —<br>снято за 24 миссии.</p>
+      <div class="l-hero__scroll"><span></span> 01 / 04</div>
+    </div>
+  </section>
+
+  <!-- STORY -->
+  <section class="section l-story" id="story">
+    <div class="container">
+      <p class="eyebrow" data-reveal>История</p>
+      <p class="l-story__statement" data-words>
+        Я ищу момент, когда далёкий мир перестаёт быть данными и становится местом.
+        Полоска света, шторм на Юпитере, секунда перед тем, как закроется затвор.
+      </p>
+      <div class="l-story__foot" data-reveal>
+        <span>БАЗИРУЕТСЯ В ОСЛО — ДОСТУПЕН ДЛЯ МИССИЙ ПО ВСЕМУ МИРУ</span>
+        <p>Для заказов, обсерваторий и неспешных разговоров о бесконечности.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHAPTERS / STICKY GALLERY -->
+  <section class="l-chapters" id="chapters">
+    <div class="container l-chapters__head" data-reveal>
+      <p class="eyebrow">Главы</p>
+      <h2>Кадры<br><em>с орбиты.</em></h2>
+    </div>
+
+    <div class="container l-gallery">
+      <div class="l-gallery__sticky">
+        <span class="l-gallery__index" id="lChapterIndex">01 — 03</span>
+        <h3 id="lChapterTitle">Там, где<br><em>кончается небо.</em></h3>
+        <p id="lChapterText">Тонкая граница между Землёй и всем остальным, снятая с 400 километров над поверхностью.</p>
+        <div class="l-gallery__dots" aria-hidden="true"><i class="is-active"></i><i></i><i></i></div>
+      </div>
+
+      <div class="l-gallery__images">
+        <figure class="l-frame" data-chapter="0" data-title="Там, где<br><em>кончается небо.</em>" data-text="Тонкая граница между Землёй и всем остальным, снятая с 400 километров над поверхностью.">
+          <div class="l-frame__media"><img src="assets/img/photo-02.jpg" alt="Кривизна Земли, вид из космоса" loading="lazy"></div>
+          <figcaption><span>01 — Низкая околоземная орбита</span><span>2024</span></figcaption>
+        </figure>
+        <figure class="l-frame" data-chapter="1" data-title="Голубой<br><em>шар.</em>" data-text="Наш дом в одном кадре — океаны, облака и хрупкая геометрия атмосферы.">
+          <div class="l-frame__media"><img src="assets/img/photo-06.jpg" alt="Земля ночью, снятая с орбиты" loading="lazy"></div>
+          <figcaption><span>02 — Земля, МКС</span><span>2025</span></figcaption>
+        </figure>
+        <figure class="l-frame" data-chapter="2" data-title="Где рождаются<br><em>звёзды.</em>" data-text="Звёздные ясли и медленная, жестокая красота глубокого космоса, снятая длинными выдержками.">
+          <div class="l-frame__media"><img src="assets/img/photo-09.jpg" alt="Цветная туманность в глубоком космосе" loading="lazy"></div>
+          <figcaption><span>03 — Туманность Карены</span><span>2026</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTE -->
+  <section class="l-quote">
+    <div class="l-quote__bg" aria-hidden="true"><img src="assets/img/photo-03.jpg" alt="" loading="lazy"></div>
+    <div class="container l-quote__inner" data-split-group>
+      <p class="eyebrow">О съёмке космоса</p>
+      <blockquote>
+        <span class="line-mask"><span>«Космос не фотографируют.»</span></span>
+        <span class="line-mask"><span><em>Ждут, пока свет</em></span></span>
+        <span class="line-mask"><span>пересечёт Вселенную.»</span></span>
+      </blockquote>
+      <p class="l-quote__by">— Мило Вантерпул</p>
+    </div>
+  </section>
+
+  <!-- GRID -->
+  <section class="section l-grid-section">
+    <div class="container">
+      <div class="l-grid-section__head" data-reveal>
+        <p class="eyebrow">Ещё кадры</p>
+        <h2>За пределами.</h2>
+      </div>
+      <div class="l-grid">
+        <a class="l-grid__item l-grid__item--tall" href="#chapters" data-reveal>
+          <img src="assets/img/photo-05.jpg" alt="Планета Земля с орбиты" loading="lazy">
+          <span class="l-grid__label"><b>Планета Земля</b><i>2025 / Серия</i></span>
+        </a>
+        <a class="l-grid__item" href="#chapters" data-reveal style="--delay:100ms">
+          <img src="assets/img/photo-08.jpg" alt="Туманность в глубоком космосе" loading="lazy">
+          <span class="l-grid__label"><b>Туманность Карены</b><i>2026 / Глубокий космос</i></span>
+        </a>
+        <a class="l-grid__item" href="#chapters" data-reveal style="--delay:200ms">
+          <img src="assets/img/photo-01.jpg" alt="Звёзды в ночном небе" loading="lazy">
+          <span class="l-grid__label"><b>Глубокое поле</b><i>2024 / Серия</i></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <footer class="l-contact" id="contact">
+    <div class="container l-contact__inner" data-split-group>
+      <p class="eyebrow" data-reveal>Заказы и печать</p>
+      <h2>
+        <span class="line-mask"><span>Давайте сделаем</span></span>
+        <span class="line-mask"><span><em>невидимое</em> видимым.</span></span>
+      </h2>
+      <a class="l-contact__mail" href="mailto:studio@orbit.photo" data-reveal data-magnetic="0.18">
+        studio@orbit.photo <span>↗</span>
+      </a>
+      <div class="l-contact__foot" data-reveal>
+        <span>© <span data-year>2026</span> Orbit — Концепт-портфолио</span>
+        <span>Мыс Канаверал · 28°33′ с.ш.</span>
+        <a href='/forma-landing-demo/'>← Все работы</a>
+      </div>
+    </div>
+  </footer>
+
+</main>
+
+<script src="assets/vendor/gsap.min.js"></script>
+<script src="assets/vendor/ScrollTrigger.min.js"></script>
+<script src="assets/vendor/lenis.min.js"></script>
+<script src="assets/js/core.js"></script>
+<script>
+(function () {
+  gsap.registerPlugin(ScrollTrigger);
+
+  /* Scroll progress */
+  var bar = document.getElementById('lProgress');
+  function progress() {
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    var p = max > 0 ? window.scrollY / max : 0;
+    bar.style.transform = 'scaleX(' + Math.min(1, Math.max(0, p)) + ')';
+  }
+  window.addEventListener('scroll', progress, { passive: true });
+  if (window.FORMA_LENIS) window.FORMA_LENIS.on('scroll', function (e) {
+    var p = e.progress || 0; bar.style.transform = 'scaleX(' + p + ')';
+  });
+  progress();
+
+  /* Hero parallax */
+  gsap.to('.l-hero__media img', {
+    yPercent: 18, scale: 1.12, ease: 'none',
+    scrollTrigger: { trigger: '.l-hero', start: 'top top', end: 'bottom top', scrub: 0.6 }
+  });
+  gsap.to('.l-hero__inner', {
+    yPercent: 28, opacity: 0, ease: 'none',
+    scrollTrigger: { trigger: '.l-hero', start: 'top top', end: 'bottom top', scrub: 0.6 }
+  });
+
+  /* Word-by-word statement reveal */
+  document.querySelectorAll('[data-words]').forEach(function (el) {
+    var words = el.textContent.trim().split(/\s+/);
+    el.innerHTML = words.map(function (w) { return '<span class="l-word">' + w + '</span>'; }).join(' ');
+    gsap.fromTo(el.querySelectorAll('.l-word'),
+      { opacity: .16 },
+      { opacity: 1, stagger: .08, ease: 'none',
+        scrollTrigger: { trigger: el, start: 'top 80%', end: 'bottom 40%', scrub: 0.75 } });
+  });
+
+  /* Gallery image parallax + clip reveal */
+  gsap.utils.toArray('.l-frame').forEach(function (frame) {
+    var img = frame.querySelector('img');
+    gsap.fromTo(frame.querySelector('.l-frame__media'),
+      { clipPath: 'inset(14% 0% 14% 0%)' },
+      { clipPath: 'inset(0% 0% 0% 0%)', ease: 'none',
+        scrollTrigger: { trigger: frame, start: 'top 90%', end: 'top 35%', scrub: 0.8 } });
+    gsap.fromTo(img, { yPercent: -8, scale: 1.12 }, {
+      yPercent: 8, scale: 1.12, ease: 'none',
+      scrollTrigger: { trigger: frame, start: 'top bottom', end: 'bottom top', scrub: 0.9 }
+    });
+  });
+
+  /* Sticky chapter copy follows visible image */
+  var frames = gsap.utils.toArray('.l-frame');
+  var title = document.getElementById('lChapterTitle');
+  var text = document.getElementById('lChapterText');
+  var index = document.getElementById('lChapterIndex');
+  var dots = document.querySelectorAll('.l-gallery__dots i');
+  frames.forEach(function (frame) {
+    ScrollTrigger.create({
+      trigger: frame,
+      start: 'top 55%',
+      end: 'bottom 55%',
+      onEnter: function () { setChapter(frame); },
+      onEnterBack: function () { setChapter(frame); }
+    });
+  });
+  function setChapter(frame) {
+    var n = frame.getAttribute('data-chapter');
+    gsap.to([title, text], { opacity: 0, y: 10, duration: .32, ease: 'power2.out', onComplete: function () {
+      title.innerHTML = frame.getAttribute('data-title');
+      text.textContent = frame.getAttribute('data-text');
+      index.textContent = '0' + (Number(n) + 1) + ' — 03';
+      dots.forEach(function (d, i) { d.classList.toggle('is-active', i === Number(n)); });
+      gsap.to([title, text], { opacity: 1, y: 0, duration: .65, ease: 'power3.out', stagger: .06 });
+    }});
+  }
+
+  /* Quote background parallax */
+  gsap.to('.l-quote__bg img', {
+    yPercent: 14, ease: 'none',
+    scrollTrigger: { trigger: '.l-quote', start: 'top bottom', end: 'bottom top', scrub: 0.8 }
+  });
+
+  /* Menu overlay */
+  var menu = document.getElementById('lMenu');
+  var btn = document.getElementById('lMenuBtn');
+  var close = document.getElementById('lMenuClose');
+  function setMenu(open) {
+    menu.classList.toggle('is-open', open);
+    menu.setAttribute('aria-hidden', String(!open));
+    btn.setAttribute('aria-expanded', String(open));
+    if (window.FORMA_LENIS) { open ? window.FORMA_LENIS.stop() : window.FORMA_LENIS.start(); }
+    document.body.style.overflow = open ? 'hidden' : '';
+  }
+  btn.addEventListener('click', function () { setMenu(true); });
+  close.addEventListener('click', function () { setMenu(false); });
+  menu.querySelectorAll('a').forEach(function (a) { a.addEventListener('click', function () { setMenu(false); }); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setMenu(false); });
+
+  window.addEventListener('load', function () { ScrollTrigger.refresh(); });
+})();
+</script>
+<script src="assets/js/bridge.js"></script>
+</body>
+</html>
